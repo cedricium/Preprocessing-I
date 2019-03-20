@@ -69,7 +69,7 @@ html, body {
 
 @font-title: 2rem;
 @font-subtitle: 1.5rem;
-@font-subheading: 1.25rem;
+@font-subheading: 1.375rem;
 @font-base: 1rem;
 
 
@@ -174,11 +174,25 @@ html, body {
 				font-weight: bold;
 				font-size: @font-subheading;
 			}
+
+			dt { font-weight: bold; }
+			dd { margin: 0.5rem 0 1rem 1rem; }
 		}
 		
-		.contact {}
-	}
+		.contact {
+			margin: 2rem 0;
 
+			h3 {
+				margin-bottom: 1rem;
+				font-weight: bold;
+				font-size: @font-subheading;
+			}
+
+			p { margin-bottom: 0.75rem; }
+			.label { font-weight: bold; }
+			.label::after { content: ':'; }
+		}
+	}
 
 	footer {
 		.flex();
