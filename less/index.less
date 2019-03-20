@@ -154,6 +154,20 @@ html, body {
           background: @grey-dark;
           color: @grey-dark;
         }
+
+        button {
+          padding: 0.5rem 2rem;
+          background: @grey-dark;
+          color: @grey-light;
+          font-size: @font-base;
+          border: none;
+          border-radius: 0.5rem;
+          .mobile({
+            width: 100%;
+          });
+
+          &:hover { cursor: pointer; }
+        }
       }
     }
 

@@ -210,6 +210,22 @@ body {
   background: #141414;
   color: #141414;
 }
+.container main .bio .bio-content button {
+  padding: 0.5rem 2rem;
+  background: #141414;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .container main .bio .bio-content button {
+    width: 100%;
+  }
+}
+.container main .bio .bio-content button:hover {
+  cursor: pointer;
+}
 .container main .experience {
   margin: 2rem 0;
 }
