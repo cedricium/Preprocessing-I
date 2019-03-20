@@ -195,6 +195,7 @@ body {
   max-width: 15rem;
 }
 .container main .bio .bio-content {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
