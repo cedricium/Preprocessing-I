@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Secular One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Secular One'), local('SecularOne-Regular'), url(https://fonts.gstatic.com/s/secularone/v3/8QINdiTajsj_87rMuMdKyqDiOO0.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -198,6 +204,7 @@ body {
   margin: 0.5rem 0;
 }
 .container main .bio .bio-content .title {
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
 }
 .container main .bio .bio-content .subtitle {
@@ -232,6 +239,7 @@ body {
 .container main .experience h3 {
   margin-bottom: 1rem;
   font-weight: bold;
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.375rem;
 }
 .container main .experience table {
@@ -262,6 +270,7 @@ body {
 .container main .skills h3 {
   margin-bottom: 1rem;
   font-weight: bold;
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.375rem;
 }
 .container main .skills dt {
@@ -276,6 +285,7 @@ body {
 .container main .contact h3 {
   margin-bottom: 1rem;
   font-weight: bold;
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.375rem;
 }
 .container main .contact p {
