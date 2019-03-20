@@ -192,10 +192,10 @@ body {
   color: #141414;
 }
 .container main .experience {
-  margin: 1rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
 }
 .container main .experience h3 {
+  margin-bottom: 1rem;
   font-weight: bold;
   font-size: 1.25rem;
 }
@@ -204,10 +204,24 @@ body {
   border-collapse: collapse;
   border: thin solid #141414;
 }
-.container main .experience table thead th,
-.container main .experience table tfoot th,
-.container main .experience table tfoot td {
+.container main .experience table thead th {
+  text-align: center;
+  font-weight: bold;
+  background: #F9F9F9;
+}
+.container main .experience table th {
+  text-align: left;
+  vertical-align: middle;
+  padding: 5px;
   border: thin solid #141414;
+}
+.container main .skills {
+  margin: 2rem 0;
+}
+.container main .skills h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 .container footer {
   display: flex;
