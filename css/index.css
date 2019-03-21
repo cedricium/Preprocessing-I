@@ -1,1 +1,309 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Secular One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Secular One'), local('SecularOne-Regular'), url(https://fonts.gstatic.com/s/secularone/v3/8QINdiTajsj_87rMuMdKyqDiOO0.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  background: #FFFFFF;
+  color: #141414;
+}
+.container {
+  max-width: 960px;
+  margin: 2rem auto 0;
+}
+.container header {
+  width: 100%;
+}
+.container header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.container header nav .link {
+  margin-left: 2rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container header nav .link {
+    margin: 0;
+  }
+}
+.container main {
+  margin: 1rem 0;
+}
+.container main .bio {
+  margin: 1rem 0;
+  padding: 2rem;
+  background: #F9F9F9;
+}
+@media (max-width: 500px) {
+  .container main .bio {
+    padding: 0.5rem;
+  }
+}
+.container main .bio .profile-img-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 15rem;
+}
+.container main .bio .bio-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.container main .bio .bio-content > * {
+  margin: 0.5rem 0;
+}
+.container main .bio .bio-content .title {
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+}
+.container main .bio .bio-content .subtitle {
+  font-size: 1.5rem;
+}
+.container main .bio .bio-content hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background: #141414;
+  color: #141414;
+}
+.container main .bio .bio-content button {
+  padding: 0.5rem 2rem;
+  background: #141414;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .container main .bio .bio-content button {
+    width: 100%;
+  }
+}
+.container main .bio .bio-content button:hover {
+  cursor: pointer;
+}
+.container main .experience {
+  margin: 2rem 0;
+}
+.container main .experience h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.375rem;
+}
+.container main .experience table {
+  width: 100%;
+  border-collapse: collapse;
+  border: thin solid #141414;
+}
+.container main .experience table thead th {
+  text-align: center;
+  font-weight: bold;
+  background: #F9F9F9;
+}
+.container main .experience table th {
+  text-align: left;
+  vertical-align: middle;
+  padding: 5px;
+  border: thin solid #141414;
+}
+@media (max-width: 500px) {
+  .container main .experience table th {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+}
+.container main .skills {
+  margin: 2rem 0;
+}
+.container main .skills h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.375rem;
+}
+.container main .skills dt {
+  font-weight: bold;
+}
+.container main .skills dd {
+  margin: 0.5rem 0 1rem 1rem;
+}
+.container main .contact {
+  margin: 2rem 0;
+}
+.container main .contact h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.375rem;
+}
+.container main .contact p {
+  margin-bottom: 0.75rem;
+}
+.container main .contact .label {
+  font-weight: bold;
+}
+.container main .contact .label::after {
+  content: ':';
+}
+.container footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 3rem;
+  background: #141414;
+  color: #FFFFFF;
+}
